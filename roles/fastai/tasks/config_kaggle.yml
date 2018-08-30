@@ -1,0 +1,11 @@
+- name: create kaggle directory
+  file:
+    path: "{{ dirs.kaggle }}"
+    state: directory
+    mode: 0755
+
+- name: copy kaggle token file
+  copy:
+    src: kaggle.json
+    dest: "{{ dirs.kaggle }}"
+    mode: 600

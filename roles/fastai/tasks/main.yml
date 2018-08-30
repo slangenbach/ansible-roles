@@ -1,0 +1,14 @@
+- include_role:
+    name: common
+    tasks_from: create_dir.yml
+
+- include_role:
+    name: common
+    tasks_from: install_python_module.yml
+
+- include_role:
+    name: common
+    tasks_from: clone_repo.yml
+
+- import_tasks: config_kaggle.yml
+- import_tasks: get_weights.yml

@@ -1,0 +1,7 @@
+---
+- name: Provision AWS instance for fastai course
+  hosts: aws
+  remote_user: ubuntu
+  roles:
+    - common
+    - fastai

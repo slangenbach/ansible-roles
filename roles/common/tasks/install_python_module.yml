@@ -1,0 +1,4 @@
+- name: install python module { item }
+  pip:
+    name: "{{ item }}"
+  with_items: "{{ python_modules }}"

@@ -1,0 +1,5 @@
+- name: clone git repo { item }
+  git:
+    repo: "{{ item }}"
+    dest: "{{ dirs.home }}"
+  with_items: "{{ git_repos }}"

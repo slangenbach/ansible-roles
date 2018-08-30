@@ -1,0 +1,18 @@
+- name: set git user.name
+  git_config:
+    name: user.name
+    scope: global
+    value: "{{ git_config.username }}"
+
+- name: set git user.email
+  git_config:
+    name: user.email
+    scope: global
+    value: "{{ git_config.email }}"
+
+- name: set git credential.helper
+  git_config:
+    name: credential.helper
+    scope: global
+    value: store
+  

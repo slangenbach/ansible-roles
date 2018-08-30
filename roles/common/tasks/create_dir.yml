@@ -1,0 +1,6 @@
+- name: create { item.key } directory 
+  file:
+    path: "{{ item.value }}"
+    state: directory
+    mode: 0755
+  with_dict: "{{ dirs }}"

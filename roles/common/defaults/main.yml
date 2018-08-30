@@ -1,0 +1,7 @@
+# default tools to install
+tools:
+    - git
+    - wget
+    - htop
+    - mc
+    - tmux

@@ -1,0 +1,16 @@
+# default directories
+dirs:
+    home: /home/ec2-user
+    data: /home/ec2-user/data
+    weights: /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/fastai/
+    kaggle: /home/ec2-user/.kaggle
+
+# default git repos to clone
+git_repos:
+    - https://github.com/fastai/fastai.git
+    - https://github.com/slangenbach/kaggle.git
+
+# default python modules to install
+python_modules:
+    - git+https://github.com/fastai/fastai.git
+    - kaggle

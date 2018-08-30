@@ -1,0 +1,5 @@
+- name: download and extract additional weights for models
+  unarchive:
+    src: http://files.fast.ai/models/weights.tgz
+    dest: “{{ dirs.weights }}"
+    remote_src: yes
